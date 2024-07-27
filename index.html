@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<!---Start of Head Tag--->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!---CSS--->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!---Iconscout CSS--->
+	<link rel="stylesheet" type="text/css" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<title>Tour Form</title>
+</head>
+<!---End of Head Tag--->
+<!---Start of Body Tag--->
+<body>
+	<!---Start of Main Div--->
+	<div class="container">
+		<header id="logo">
+    		<img src="css/globe.svg" alt="Global Adventures logo">
+    		<h2>Global Adventures Travel Form</h2>
+		</header>
+		<form method="POST" action="https://tau.usq.edu.au/courses/CSC8740/reflect.php">
+			  <div class="form first" id="form-1">
+				    <div class="details personal">
+				      <h3>Personal Details</h3>
+				      <div class="fields">
+				        <div class="input-fields">
+				              <span class="title">With whom you want to travel?</span>
+				              <input type="radio" id="travel-partner-radioBtn" name="partner" value="Travel-with-Partner" required>
+				              <label>Travel with Partner</label>
+				              <input type="radio" id="travel-children-radioBtn" name="children" value="Travel-with-Children" required>
+				              <label>Travel with Children</label>
+				              <input type="radio" id="travel-friend-radioBtn" name="friend" value="Travel-with-Friend" required>
+				              <label>Travel with Friend</label>
+				          </div>
+
+				          <div class="input-field-1">
+				              <label>Name</label>
+				              <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+				          </div>
+
+				          <div class="input-field-1">
+				              <label>Date of Birth</label>
+				              <input type="date" id="dob" name="DOB" placeholder="Enter your date of birth" required>
+				          </div>
+
+				          <div class="input-field-1">
+				              <label>Email</label>
+				              <input type="text" id="email" name="email" placeholder="Enter your Email" required>
+				          </div>
+
+				          <div class="input-field-1">
+				              <label>Password</label>
+				              <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required>
+				          </div>
+
+				          <div class="input-field-1">
+				              <label>Occupation</label>
+				              <input type="text" id="occup" name="occup" placeholder="Enter your occupation" required>
+				          </div>
+
+				          <div class="input-fields">
+				              <span class="title">Gender</span>
+				              <input type="radio" id="male-radio-btn" name="maleRadio" value="Male-Radio_Button" required>
+				              <label>Male</label>
+				              <input type="radio" id="female-radio-btn" name="femaleRadio" value="Female-Radio-Button" required>
+				              <label>Female</label>
+				              <input type="radio" id="other-radio-btn" name="otherRadio" value="Other-Radio-Button" required>
+				              <label>Other</label>
+				          </div>
+
+				          <div class="input-fields">
+				              <span class="title">Dietary Requirements</span>
+				              <input type="radio" id="vegetarian-radio-btn" name="vegeratianRadio" value="Vegetarian-Radio_Button" required>
+				              <label>Vegetarian</label>
+				              <input type="radio" id="vegan-radio-btn" name="veganRadio" value="Vegan-Radio-Button" required>
+				              <label>Vegan</label>
+				              <input type="radio" id="halal-radio-btn" name="halalRadio" value="Halal-Radio-Button" required>
+				              <label>Halal</label>
+				              <input type="radio" id="kosher-radio-btn" name="kosherRadio" value="Kosher-Radio-Button" required>
+				              <label>Kosher</label>
+				              <input type="radio" id="allergies-radio-btn" name="allergiesRadio" value="Allergies-Radio-Button" required>
+				              <label>Allergies</label>
+				          </div>
+
+				          <div class="input-field-1">
+				              <span class="title">Budget Details</span>
+				              <label>Budget Range</label>
+				              <select id="budget" name="budget" required>
+				                      <option value="">--Select--</option>
+				                      <option value="$1000 - $3000">$1000 - $3000</option>
+				                      <option value="$3000 - $5000">$3000 - $5000</option>
+				                      <option value="$5000+">$5000+</option>
+				                  </select>
+				            </div>
+
+				            <div class="input-field-1">
+				              <span class="title">Activities</span>
+				              <label>How Active?</label>
+				              <select id="activitylevel" name="activitylevel" required>
+				                      <option value="">--Select--</option>
+				                      <option value="travelling_all_time">Want to be travelling all the time?</option>
+				                      <option value="need_rest_days">Need rest days?</option>
+				                      <option value="rest_days_how_often">Rest days how often?</option>
+				                      <option value="strenuous_activities">Enjoy strenuous activities?</option>
+				                      <option value="sedentary">Sedentary?</option>
+				                  </select>
+				            </div>
+
+
+				            <div class="input-field-1">
+				              <span class="title">Travel Dates</span>
+				                  <label for="preferreddates">Preferred Travel Dates:</label>
+				                  <input type="date" id="preferreddates" name="preferreddates" placeholder="Enter your preferred dates"required>
+				            </div>
+
+
+				            <div class="input-field-1">
+				              <span class="title">Special Needs & Requirements</span>
+				              <label>Special Needs</label>
+				              <input type="text" id="need" name="Need" placeholder="Enter your sepcial needs" required>
+				            </div>
+				      </div>
+				    </div>
+				    <button class="btnNext">
+				      <span class="nextBtn">Next</span>
+				      <i class="uil uil-navigator"></i>
+				    </button>
+			  </div>
+
+			  <div class="form second" id="form-2" style="display:none">
+			    <div class="details accommodation">
+			      <h3>Accommodation</h3>
+			        <div class="fields">
+			          	<div class="input-fields">
+			              <span class="title">What type of Accommodation would you want?</span>
+			              <span class="title">Hotels</span>
+			              <input type="radio" id="3-hotel-radioBtn" name="3-Hotel-RadioBtn" value="3-star-hotel-radioBtn" required>
+			              <label>3 Star Hotels</label>
+			              <input type="radio" id="5-hotel-radioBtn" name="5-Hotel-RadioBtn" value="5-star-hotel-radioBtn" required>
+			              <label>5 Star Hotels</label>
+			              <input type="radio" id="motel-radioBtn" name="Motel-RadioBtn" value="5-star-motel-radioBtn" required>
+			              <label>Motels</label>
+			            </div>
+
+			            <div class="input-fields">
+			              <span class="title">Rooms</span>
+			              <input type="radio" id="single-room-radioBtn" name="single-room-RadioBtn" value="Single-Room-RadioBtn" required>
+			              <label>Single Room</label>
+			              <input type="radio" id="shared-room-radioBtn" name="shared-room-RadioBtn" value="Shared-Room-RadioBtn" required>
+			              <label>Shared Room</label>
+			            </div>
+
+
+			            <div class="input-field-1">
+			              <span class="title">Bedrooms</span>
+			              <select id="bedroom" name="bedroom" required>
+			                      <option value="">--Select--</option>
+			                      <option value="with-bathroom">With Bathroom</option>
+			                      <option value="shared-bathroom">Shared Bathroom</option>
+			                      <option value="luxury">Luxury</option>
+			               </select>
+			            </div>
+
+			            <div class="input-field-2">
+			                <span class="title">Other Facilities</span>
+			                <div class="checkbox-row">
+			                  <input type="checkbox" id="breakfast" name="breakfast" value="breakfast" required>
+			                  <label for="breakfast">Breakfast</label>
+			                  <input type="checkbox" id="airbnb" name="airbnb" value="airbnb" required>
+			                  <label for="airbnb">Airbnb</label>
+			                  <input type="checkbox" id="student-accommodation" name="student-accommodation" value="student-accommodation" required>
+			                  <label for="student-accommodation">Student Accommodation</label>
+			                </div>
+			                <div class="checkbox-row">
+			                  <input type="checkbox" id="Backpackers-accommodation" name="Backpackers-accommodation" value="student-accommodation" required>
+			                  <label for="Backpackers-accommodation">Backpacker's Accommodation</label>
+			                  <input type="checkbox" id="camping" name="camping" value="camping" required>
+			                  <label for="camping">Camping</label>
+			                  <input type="checkbox" id="pickup-service" name="pickup-service" value="pickup-service" required>
+			                  <label for="pickup-service">Pickup Service</label>
+			                </div>
+			                <div class="checkbox-row">
+			                  <input type="checkbox" id="special-request" name="special-request" value="special-request" required>
+			                  <label for="special-request">Special Request</label>
+			                </div>
+			        	</div>      
+			    	</div>
+			    </div>
+			    <div class="buttons">
+			      <button class="backBtn" style="display:none">
+			        <span class="btnBack">Back</span>
+			        <i class="uil uil-navigator rotate-icon"></i>
+			      </button>
+
+			      <button class="btnNext">
+			        <span class="nextBtn">Next</span>
+			        <i class="uil uil-navigator"></i>
+			      </button>
+			    </div>
+			  </div>
+
+			  <div class="form third" id="form-3" style="display:none">
+					<div class="travel accommodation">
+						<h3>Travel Accommodation</h3>
+						<div class="fields">
+							<div class="input-field-1">
+								<span class="title">Modes of Travel by Air</span>
+								<label>Air</label>
+								<select id="air" name="air" required>
+									<option value="">--Select--</option>
+									<option value="air-jet">Air (jet)</option>
+					            	<option value="air-turbo-prop">Air (turbo-prop)</option>
+					            	<option value="air-helicopter">Air (helicopter)</option>
+								</select>
+							</div>
+
+							<div class="input-field-1">
+								<span class="title">Modes of Travel by Water</span>
+								<label>Water</label>
+								<select id="water" name="water" required>
+									<option value="water-cruise">Water (cruise)</option>
+					            	<option value="water-sail">Water (sail)</option>
+					            	<option value="water-barge">Water (barge)</option>
+					            	<option value="water-small">Water (small)</option>
+					            	<option value="water-large">Water (large)</option>
+								</select>
+							</div>
+
+							<div class="input-field-1">
+								<span class="title">Other Modes of Travel</span>
+								<label>Others</label>
+								<select id="other" name="other" required>
+									<option value="">--Select--</option>
+									<option value="train">Train</option>
+					            	<option value="bus">Bus</option>
+					            	<option value="car">Car</option>
+					            	<option value="bicycle">Bicycle</option>
+					            	<option value="horse">Horse</option>
+					            	<option value="donkey-mule">Donkey/Mule</option>
+					            	<option value="camel">Camel</option>
+					            	<option value="walking">Walking</option>
+								</select>
+							</div>
+
+							<div class="input-field-1">
+								<span class="title">Preferred Enviornment</span>
+								<label>Choose Enviornment</label>
+								<select id="enviornment" name="enviornment" required>
+									<option id="">--Select--</option>
+									<option value="city">Cities</option>
+					            	<option value="country">Country</option>
+					            	<option value="natural">Natural</option>
+					            	<option value="mountain">Mountains</option>
+					            	<option value="desert">Deserts</option>
+					            	<option value="sea">Sea</option>
+					            	<option value="coastal">Coastal</option>
+					            	<option value="island">Island</option>
+					            	<option value="forest">Rain Forest</option>
+								</select>
+							</div>
+
+							<div class="input-field-3">
+								  <span class="title">Preferred Destinations</span>
+								  <div class="checkbox-row">
+								    <input type="checkbox" id="africa" name="africa" value="africa" required>
+								    <label for="africa">Africa</label>
+								    <input type="checkbox" id="asia" name="asia" value="asia" required>
+								    <label for="asia">Asia</label>
+								    <input type="checkbox" id="central-america" name="central-america" value="central-america" required>
+								    <label for="central-america">Central America</label>
+								  </div>
+								  <div class="checkbox-row">
+								    <input type="checkbox" id="europe" name="europe" value="europe" required>
+								    <label for="europe">Europe</label>
+								    <input type="checkbox" id="middle-east" name="middle-east" value="middle-east" required>
+								    <label for="middle-east">Middle-East</label>
+								    <input type="checkbox" id="north-america" name="north-america" value="north-america" required>
+								    <label for="north-america">North-America</label>
+								  </div>
+								  <div class="checkbox-row">
+								    <input type="checkbox" id="european-union" name="european-union" value="european-union" required>
+								    <label for="european-union">European Union</label>
+								    <input type="checkbox" id="oceania-papua" name="oceania-papua" value="oceania-papua" required>
+								    <label for="oceania-papua">Oceania Papua</label>
+								    <input type="checkbox" id="south-america" name="south-america" value="south-america" required>
+								    <label for="south-america">South America</label>
+								  </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="buttons">
+						<button class="backBtn" style="display:none">
+							<span class="btnBack">Back</span>
+							<i class="uil uil-navigator rotate-icon"></i>
+						</button>
+
+						<button class="btnSubmit">
+							<span class="btnSubmit">Submit</span>
+							<i class="uil uil-navigator"></i>
+						</button>
+					</div>
+				</div>
+
+		</form>
+	</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html> 
